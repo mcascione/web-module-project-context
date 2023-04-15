@@ -34,8 +34,8 @@ module.exports = {
         use: {
           loader: 'babel-loader',
           options: {
-            'presets': [['@babel/preset-env', { targets: { chrome: '80' } }]],
-            'plugins': [['babel-plugin-styled-components'], ['@babel/plugin-transform-react-jsx']]
+            presets: [['@babel/preset-env', { targets: { chrome: '80' } }]],
+            plugins: ['babel-plugin-styled-components', '@babel/plugin-transform-react-jsx']
           }
         },
       },
